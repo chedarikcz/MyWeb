@@ -1,0 +1,727 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: none; 
+    -moz-text-size-adjust: none; 
+    -ms-text-size-adjust: none; 
+    text-size-adjust: none; 
+}
+
+@font-face {
+    font-family: "normal";
+    src: url('font/NunitoSans_7pt-Regular.ttf') format('TrueType'),
+}
+
+@font-face {
+    font-family: "head";
+    src: url('font/Oxanium-Bold.ttf') format('TrueType'),
+}
+
+*::selection {
+    background-color: black;
+    color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+body {
+    font-size: 1rem;
+    background: #1e1e1e;
+    font-family: "normal";
+    color: whitesmoke;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/*
+body img {
+    pointer-events: none;
+}
+*/
+
+.background {
+    max-width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background: #111111;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.603)), url(images/2024-07-29_16.56.59.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.832);
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Aby byl pod ostatními prvky */
+    position: absolute;
+}
+
+nav {
+    max-width: 1100px;
+    background-color: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.495);
+    padding-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul li {
+    padding: 0px 8px;
+    display: inline-block;
+}
+
+nav ul li:last-child {
+    padding: 0px 4px;
+}
+
+nav a {
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.logo img {
+    width: 29px;
+    vertical-align: middle;
+    border-radius: 7px;
+    margin-right: 6px;
+    margin-top: -9px;
+}
+
+.logo span {
+    font-size: 1.1rem;
+}
+
+.nadpis {
+    display: block;
+    text-align: left;
+    align-items: center;
+    max-width: 1100px;
+    margin: 130px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.nadpis h2 {
+    margin-left: 15px;
+    font-family: "head";
+    margin-top: 10px;
+    color: rgb(207, 207, 207);
+}
+
+.header-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nadpis-head {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    justify-content: left;
+    text-align: left;
+}
+
+.nadpis hr {
+    height: 18px;
+    width: 5px;
+    border: 0px;
+    background-color: grey;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.nadpis h1 {
+    text-shadow: 2px 2px black;
+    color: whitesmoke;
+    font-size: 3.5rem;
+    font-family: "head";
+    position: relative;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.nadpis p {
+    color: #bbb;
+    font-size: 1.22rem;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.portfolio {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.portfolio p {
+    margin-bottom: -3px;
+    color: rgb(120, 120, 120);
+    font-size: 1.1rem;
+    display: none;
+}
+
+.portfolio h3 {
+    text-align: center;
+    font-size: 2.6rem;
+    position: relative;
+    display: inline-block;
+    margin: 0px auto;
+    font-family: "head";
+    text-shadow: 2px 2px black;
+    
+}
+
+.portfolio h3::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 105%;
+    height: 4px;
+    background-color: grey;
+    position: absolute;
+    top: 53px;
+    text-align: center;
+    left: 50%;
+    transform:  translate(-50%);
+}
+
+/*
+.portfolio h3::before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 7px;
+    height: 35px;
+    background-color: #111111;
+    position: absolute;
+    top: 4px;
+    text-align: center;
+    right: -19%;
+    transform:  translate(-50%);
+}
+*/
+
+.project-text h4 span {
+    font-size: 14px;
+    color: grey;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+
+.project-text h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.symbols {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.symbols span {
+    background-color: #1e1e1e;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    color: whitesmoke;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.592);
+}
+
+.contact img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    border: 3px solid rgba(0, 0, 0, 0.529);
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.contact span {
+    font-size: 1.1rem;
+}
+
+.contact {
+    max-width: 400px;
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.contact-div {
+    width: 600px;
+}
+
+.contact-container {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    max-width: 1000px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.contact-container hr {
+    height: 300px;
+    width: 5px;
+    border: 0px;
+    background-color: grey;
+    margin-right: 50px;
+}
+
+form {
+    background-color: #111111; 
+    border-radius: 5px; 
+    padding: 40px; 
+    max-width: 400px; 
+    margin: auto; 
+    border-radius: 16px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+    font-size: 14px;
+}
+
+textarea {
+    height: 125px; 
+    resize: none; 
+}
+
+button {
+    background-color: #1e1e1e; 
+    color: white; 
+    border: none; 
+    border-radius: 7px; 
+    padding: 10px 16px;
+    cursor: pointer; 
+    font-size: 1rem; 
+}
+
+button:hover {
+    background-color: black; 
+}
+
+.contact-content {
+    margin-top: 15px;
+}
+
+.Project hr {
+    margin: 15px auto;
+    margin-top: 10px;
+    border: 0px;
+    height: 5px;
+    background-color: #1e1e1e;
+}
+
+.project-content img {
+    width: 45px;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-content img:hover {
+    background-color: black;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.Project h5 {
+    align-items: center;
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+    padding: 13px 14px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    font-size: 15.5px;
+}
+
+.Project h5:hover {
+    background-color: black;
+}
+
+.Project-bc {
+    position: relative;
+    width: 430px;
+    margin: 20px;
+}
+
+.project-text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project-background {
+    text-align: center;
+    background: #111111;
+    vertical-align: middle;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: -20px;
+}
+
+.Projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    margin: 25px auto;
+    max-width: 1410px;
+}
+
+.project-img {
+    max-width: 100%; 
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Project p {
+    margin-top: 5px;
+    color: grey;
+}
+
+.Project a:hover {
+    color: grey;
+}
+
+.Project h4 {
+    font-size: 21px;
+    margin-top: 5px;
+    color: whitesmoke;
+    vertical-align: middle;
+    align-items: center;
+    font-weight: normal;
+}
+
+.Projects a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-bc {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: #111111;
+    border-top: 5px solid rgba(0, 0, 0, 0.175);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.link img {
+    width: 25px;
+    padding: 10px;
+    background-color: #1f2124;
+    border-radius: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.slideshow-container img {
+    border-radius: 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 130%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.modal-container {
+    position: fixed; /* Umožňuje modalu být nad celou stránkou */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledné pozadí */
+    display: none; /* Skryje modal v základním stavu */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Zajistí, že modal bude vždy nad obsahem */
+}
+
+/* Když je modal aktivní, použije se display: flex */
+.modal-container.active {
+    display: flex;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+}
+
+.modal-container img {
+    max-width: 100%;
+}
+
+.close-btn {
+    color: whitesmoke;
+    background-color: darkred;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.close-btn:hover {
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 1100px) { 
+
+    .contact-container {
+        display: block;
+        margin: 50px auto;
+        max-width: 600px;
+    }
+
+    .contact-div {
+        width: auto;
+    }
+
+    .contact-container hr {
+        height: 4px;
+        width: 60%;
+        margin: 35px auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-content { 
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 26px;
+        margin-top: -6px;
+    }
+
+    .background {
+        height: fit-content;
+    }
+
+    .nadpis p {
+        font-size: 1.15rem;
+    }
+
+    .nadpis h1 {
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+
+    .Projects {
+        max-width: 100%;
+    }
+
+    .Project-bc {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /*
+    .Project h5 {
+        font-size: 14px;
+    }
+
+    .symbols span {
+        font-size: 12.4px;
+    }
+
+    .Project h4 {
+        font-size: 18px;
+    }
+
+    .Project h5 {
+        font-size: 13.4px;
+    }
+    */
+    .nadpis-head {
+        display: block;
+    }
+
+    .nadpis h2 {
+        margin: 0px;
+        margin-top: -90px;
+        display: none;
+    }
+
+    .nadpis p {
+        margin-top: -5px;
+    }
+
+    .nadpis hr {
+        display: none;
+    }
+
+    .slideshow-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
