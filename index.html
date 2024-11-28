@@ -1,1 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="images/logo.png">
+    <title>chedarik • FrontEnd Developer</title>
+
+    <!--META-->
+    <meta name="keywords" content="chedarik, website developer, chedarik website, chedariik websites">
+    <meta name="author" content="chedarik">
+    <meta name="description" content="Hi, I'm on the internet as chedarik. I am mainly involved in website design and development.
+    Primarily I create websites for minecraft servers, but I can create anything else. My prices are
+    satisfactory and also the result of my work. I mainly use programming languages like HTML, JS,
+    CSS and also PHP.">
+    <meta name="theme-color" content="#1d1d21">
+    <!--META-->
+
+    <!--OG-->
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="chedarik • FrontEnd Developer">
+    <meta property="og:description" content="Hi, I'm on the internet as chedarik. I am mainly involved in website design and development.
+    Primarily I create websites for minecraft servers, but I can create anything else. My prices are
+    satisfactory and also the result of my work. I mainly use programming languages like HTML, JS,
+    CSS and also PHP.">
+    <meta property="og:url" content="https://chedarik.hys.cz/">
+    <!--OG-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="background">
+            <div class="header-content">
+                <nav>
+                    <div class="logo">
+                        <img src="https://minotar.net/avatar/chedarik" alt="img">
+                        <span>chedarik</span>
+                    </div>
+                    <ul>
+                        <li><a href="#my_work">My Work</a></li>
+                        <li><a href="#contact_me">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nadpis">
+                    <div class="nadpis-head">
+                        <h1>chedarik</h1>
+                        <hr>
+                        <h2>WEB DEVELOPER</h2>
+                    </div>
+                    <p>Hi, I'm on the internet as chedarik. I am mainly involved in website design and development.
+                        Primarily I create websites for minecraft servers, but I can create anything else. My prices are
+                        satisfactory and also the result of my work. I mainly use programming languages like HTML, JS,
+                        CSS and also PHP.</p>
+                </div>
+            </div>
+            <div id="particles-js"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="my_work">
+            <div class="portfolio">
+                <p>From 2023</p>
+                <h3>MY WORK</h3>
+            </div>
+            <div class="Projects">
+
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/lords-world.png" alt="img" class="project-img">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>PHP</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                
+                            <div class="project-text">
+                                <hr>
+                                <h4>Lords-World.eu <span>1.11 2024</span></h4>
+                                <p>A website for the minecraft server, with basic information about the project and integration with the admin-team.</p>                              
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="date">
+                                    <h5><a href="https://lords-world.eu/" target="_blank">Click here to show a website</a></h5>
+                                </div>
+                                <img src="images/search.png" alt="img" onclick="openModal(this, 'modal1')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="modal1" class="modal-container" data-modal-id="modal1">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeModal(this)">Close</span>
+                        <div class="slideshow-container">
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/homepage_1.png">
+                            </div>
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/homepage_2.png">
+                            </div>
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/homepage_3.png">
+                            </div>
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/store.png">
+                            </div>
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/rules.png">
+                            </div>
+                            <div class="mySlides modal1-slide fade">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="images/slideshow/lords-world.eu/admin-team.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 'modal1')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'modal1')">&#10095;</a>
+                        </div>               
+                    </div>
+                </div>
+                
+                <!-- Druhý projekt a modal -->
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/blackmc.png" alt="img" class="project-img">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>PHP</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                
+                            <div class="project-text">
+                                <hr>
+                                <h4>BlackMC <span>29.5 2024</span></h4>
+                                <p>A website for the minecraft server with basic project information and integration with the admin team, and a simple ticket system to manage tickets for the helper team.</p>                            
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="date">
+                                    <h5><a href="https://blackmc.eu/" target="_blank">Click here to show a website</a></h5>
+                                </div>
+                                <img src="images/search.png" alt="img" onclick="openModal(this, 'modal2')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="modal2" class="modal-container" data-modal-id="modal2">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeModal(this)">Close</span>
+                        <div class="slideshow-container">
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">1 / 9</div>
+                                <img src="images/slideshow/blackmc/homepage_1.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">2 / 9</div>
+                                <img src="images/slideshow/blackmc/homepage_2.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="images/slideshow/blackmc/rules.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="images/slideshow/blackmc/admin-team.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="images/slideshow/blackmc/login.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="images/slideshow/blackmc/admin_dashboard.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="images/slideshow/blackmc/all_tickets.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="images/slideshow/blackmc/ticket_detail_1.png">
+                            </div>
+                            <div class="mySlides modal2-slide fade">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="images/slideshow/blackmc/ticket_detail_2.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 'modal2')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'modal2')">&#10095;</a>
+                        </div>               
+                    </div>
+                </div>
+                
+
+                <!--
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/cubic-kingdom.png" alt="Picture">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>PHP</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <div class="project-text">
+                                <hr>
+                                <h4>Cubic-Kingdom</h4>
+                                <p>A website that contains basic information about the project. Connected to the minecraft server with integration of adding news as admin and simple ticket system.</p>
+
+                                <div class="date">
+                                    <span>11.5 2024</span>
+                                </div>
+
+                            </div>
+                            <h5><a href="https://cubic-kingdom.cz/" target="_blank">Click here to show a website</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/chedarik.png" alt="Picture">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            
+                            <div class="project-text">
+                                <hr>
+                                <h4>chedarik</h4>
+                                <p>I created my website to give you an overview of the projects I've been involved in while creating their website.</p>
+                                
+                                <div class="date">
+                                    <span>9.12 2023</span>
+                                </div>
+
+                            </div>
+                            
+                            <h5><a href="https://chedarik.hys.cz/">Click here to show a website</a></h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/Adularia.cz.png" alt="Picture">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            <div class="project-text">
+                                <h4>Adularia</h4>
+                                <p>This website is for a minecrat server called Adularia, it contains basic information
+                                    about the server with a sidebar.</p>
+                                <h5><a href="https://www.adularia.cz/" target="_blank">Click here to show a website</a></h5>
+                            </div>
+                            <div class="date">
+                                <span>9.12 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-bc">
+                    <div class="Project">
+                        <img src="images/Projects/SkyTopia.png" alt="Picture">
+                        <div class="project-background">
+                            <div class="symbols">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            <div class="project-text">
+                                <h4>SkyTopia</h4>
+                                <p>This website is for a minecrat server called SkyTopia, it contains basic information
+                                    about the server.</p>
+                                <h5><a href="https://www.skytopia.eu/" target="_blank">Click here to show a website</a></h5>
+                            </div>
+                            <div class="date">
+                                <span>21.11 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </section>
+
+        <section id="contact_me">
+            <div class="portfolio">
+                <p>Are you interest?</p>
+                <h3>CONTACT</h3>
+            </div>
+
+            <div class="header-content">
+                <div class="contact-container">
+
+                    <div class="contact-div">
+                        <div class="contact">
+                            <div class="contact-content">
+                                <a href="javascript:void(0)" onclick="copybutton();">
+                                    <img src="images/dsc.png" alt="img">
+                                </a>
+                                <span>chedarik</span>
+                            </div>
+                            <div class="contact-content">
+                                <a href="mailto:chedarik.dev@gmail.com">
+                                    <img src="images/email.png" alt="img">
+                                </a>
+                                <span>chedarik.dev@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <hr>
+                    <div class="contact-div">
+                        <form id="contactForm" action="https://formspree.io/f/xrbgzlqo" method="POST">
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-bc">
+            <div class="footer">
+
+                <div class="links">
+
+                    <div class="link">
+                        <p>chedarik - FrontEnd Dev | 2024</p>
+                    </div>
+
+                    <div class="link">
+                        <p>Latest changest - 5.11 2024</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="particles.js"></script>
+</body>
+
+</html>
